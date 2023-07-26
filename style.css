@@ -1,0 +1,895 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: "Oswald", serif;
+}
+
+  /* ____________header starts here____________ */
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(32,30,32);
+    padding: 0.5rem 6rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  .burger{
+    display: none;
+  }
+
+  nav ul{
+    display: flex;
+    gap: 40px;
+  }
+
+  nav ul li{
+    list-style: none;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  nav ul li::after{
+    content: "";
+    background-color:rgb(255,165,128);
+    height: 2px;
+    width: 0%;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  nav ul li:hover::after{
+    width: 100%;
+  }
+
+
+  .logo span{
+    font-family: "Parisienne", cursive;
+    font-size: 2rem;
+    color:rgb(90,83,47);
+    font-weight: 700;
+  }
+
+  /* ___________hero section starts here__________ */
+
+  .hero{
+    background-image: url("/images/emy-XoByiBymX20-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+    height: 34rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-text{
+    background: rgba(0, 0, 0, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.3px);
+    -webkit-backdrop-filter: blur(1.3px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 4rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero .hero-text span{
+    font-size: 4rem;
+    color: rgb(255,165,128);
+    font-family: "Parisienne", cursive;
+  }
+
+  .hero .hero-text p{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+
+  .hero-btns button:nth-of-type(1){
+    background-color: transparent;
+    border: 2px solid rgb(255,165,128);
+    color:rgb(255,165,128);
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: 900;
+  }
+
+  .hero-btns button:nth-of-type(1):hover{
+    background-color:rgb(255,165,128);
+    color:rgb(34,32,35);
+  }
+
+  .hero-btns button:nth-of-type(2){
+    color: black;
+    background:rgb(255,165,128);
+    border: none;
+    padding: 0.6rem;
+    cursor: pointer;
+    font-weight: 900;
+  }
+
+  .hero-btns button:nth-of-type(2):hover{
+    background-color: transparent;
+    border: 2px solid rgb(255,165,128);
+    color:rgb(255,165,128);
+  }
+
+
+  /*__________reservation section_________ */
+
+  .reservation-section div{
+    display: flex;
+    padding: 3rem;
+    background-color:rgb(255,165,128);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .reservation-section div p{
+    font-size: 1.5rem;
+    margin-left: 15rem;
+    font-weight: 800;
+    width: 50%;
+  }
+
+  .reservation-section div button{
+    background: transparent;
+    padding: 1rem 0;
+    margin-right: 8rem;
+    font-weight: 800;
+    cursor: pointer;
+    width: 15%;
+  }
+
+  .reservation-section div button:hover{
+    color: rgb(255,165,128);
+    background-color:rgb(34,32,35);
+    border: 2px solid rgb(34,32,35);
+  }
+
+
+  /* ____________menu section____________ */
+
+  .menu-section{
+    background-color: rgb(34,32,35);
+    padding: 5rem 0;
+  }
+
+  .menu-section .menu-section-headings span{
+    display: block;
+  }
+
+  .menu-section .menu-section-headings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-section .menu-section-headings span:nth-child(1){
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+    
+  }
+
+  .menu-section .menu-section-headings span:nth-child(2){
+    font-family: "Parisienne", cursive;
+    color:rgb(255,165,128);
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .menu-section-headings *{
+    margin-bottom: 1rem;
+  }
+
+
+  .menu-section-headings::after{
+    content: "";
+    height: 1px;
+    width: 8rem;
+    background-color: rgb(255,165,128);
+    display: block;
+  }
+
+  /* ______menu items_______ */
+
+  .flex-menu-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 6rem;
+  }
+  
+
+  img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .white-text{
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    gap: 2rem;
+  }
+
+  span{
+    display: block;
+  }
+
+  .item-price{
+    color:rgb(255,165,128);
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+
+  .item-name{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .item-description{
+    font-size: 1.5rem;
+  }
+
+  .flex-items{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .two, .five{
+    margin: 2rem 0;
+  }
+
+
+
+  /* chef's choice */
+ 
+  .chef-choice{
+    background-image:url('/images/mainn.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 5rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+ 
+  .chef-choice-subsection{
+    background:rgb(34,32,35);
+    color: #fff;
+    padding: 3rem;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chef-choice-subsection p:nth-of-type(1){
+    font-family: "Parisienne", cursive;
+    color:rgb(255,165,128);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .chef-choice-subsection h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+  
+  .chef-choice-subsection p:nth-of-type(2){
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .chef-choice-subsection button{
+    background: transparent;
+    color:rgb(255,165,128);
+    border: 2px solid rgb(255,165,128);
+    padding: 1rem;
+    font-weight: 800;
+    width: 150px;
+    cursor: pointer;
+  }
+
+  .chef-choice-subsection button:hover, .form-section button:hover{
+    background-color:rgb(255,165,128);
+    color:rgb(32,30,32);
+  }
+
+
+  /* ___________contact section__________ */
+
+
+  .contact-section{
+    padding: 4rem 0;
+    display: grid;
+    background:rgb(34,32,35);
+    color: white;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+
+  input, textarea{
+    display: block;
+    background: transparent;
+    color: white;
+    border: 1px solid grey;
+    margin-bottom: 1rem;
+    width: 600px;
+    padding: 1rem;
+  }
+
+  ::placeholder {
+    color: white;
+    opacity: 1;
+  }
+
+  .form-section{
+    width: auto;
+  }
+
+  .form-section button{
+    background: transparent;
+    border: 1px solid rgb(255,165,128);
+    color: rgb(255,165,128);
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  form input:focus{
+    outline: none;
+    appearance: none;
+  }
+
+  form textarea:focus{
+    outline: none;
+    appearance: none;
+  }
+
+
+  h5{
+    font-size: 2rem;
+  }
+
+  .left-contact-section p:nth-of-type(1){
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .website{
+    color: gray;
+    font-family: cursive;
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+ .address-section div{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 1rem;
+ }
+
+ .address-section i{
+  color:rgb(255,165,128);
+ }
+
+ .contact-section .left-contact-section .address-section div:nth-of-type(3) span{
+  margin-left: -5px;
+ }
+
+
+/* ________footer__________ */
+
+footer{
+  background: rgb(35,33,35);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+footer p{
+  color: grey;
+  font-size: 1.5rem;
+}
+
+.footer-icons{
+  list-style: none;
+  display: flex;
+}
+
+.footer-icons li a{
+  text-decoration: none;
+}
+
+.footer-icons li a i{
+  font-size: 1rem;
+  margin-left: 1rem;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.fa-facebook-f{
+  background-color: rgb(47,56,82);
+  color: #fff;
+}
+
+.fa-twitter{
+  background-color: rgb(21,101,125);
+  color: #fff;
+}
+
+.fa-instagram{
+  background-color: rgb(111,38,89);
+  color: #fff;
+}
+
+.fa-google-plus-g{
+  background-color: rgb(118,53,41);
+  color: #fff;
+}
+
+
+/* _________MEDIA QUERIES_________  */
+
+@media screen and (max-width: 600px){
+
+
+  .header{
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo span{
+    text-align: center;
+  }
+
+
+  /* hamburger */
+
+
+  .burger::before,
+  .burger::after,
+  .burger input {
+
+    display: block;
+    content: "";
+    width: 60px;
+    height: 8px;
+    background-color: #fff;
+    transform-origin: left center;
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* rotate to 45 deg when the input inside the burger has a checkbox which is checked */
+
+  .burger:has(input:checked)::before {
+    rotate: 45deg;
+    width: 50px;
+  }
+
+  .burger:has(input:checked)::after {
+    rotate: -45deg;
+    width: 50px;
+  }
+
+
+  .burger:has(input:checked) + nav ul{
+    display: block;
+    position: absolute;
+    top: 3.6rem;
+    background-color: rgb(255,165,128);
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .burger:has(input:checked) + nav ul li{
+    margin-bottom: 1rem;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: absolute;
+    right: 10px;
+  }
+
+  .burger input:checked {
+    width: 0;
+    opacity: 0;
+  }
+
+  .burger input {
+    appearance: none;
+    padding: 0;
+    margin: 0 0 0;
+  }
+
+
+  .burger{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 10px;
+  }
+
+  nav ul{
+    display: none;
+  }
+
+  .hero{
+    height: 50vh;
+    padding: 0 3rem;
+  }
+
+
+  .reservation-section div{
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .reservation-section div button{
+    padding: 1rem 0;
+    font-weight: 800;
+    cursor: pointer;
+    width: 40%;
+    font-size: 0.5rem;
+    margin: 0 auto;
+  }
+
+  .reservation-section div p{
+    font-size: 1rem;
+    font-weight: 800;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .flex-menu-container{
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0 1rem;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .right-menu-items{
+    margin-top: 2rem;
+  }
+
+  .website{
+    display: none;
+  }
+
+  .contact-section{
+   flex-direction: column;
+  }
+
+
+  img{
+    width: 70px;
+    height: 70px;
+  }
+
+
+  .white-text{
+    font-size: 1rem;
+    gap: 1rem;
+  }
+
+  span{
+    display: block;
+  }
+
+  .item-price{
+    font-size: 1rem;
+  }
+
+  .item-name{
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+
+  .item-description{
+    font-size: 1rem;
+  }
+
+  /* chef's choice */
+
+  .chef-choice{
+    padding:2rem;
+  }
+  
+  .chef-choice-subsection{
+    padding: 2rem;
+  }
+
+  .chef-choice-subsection p:nth-of-type(1){
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .chef-choice-subsection h3{
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .chef-choice-subsection p:nth-of-type(2){
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .chef-choice-subsection button{
+    padding: 0.5rem;
+    width: 30%;
+    font-size: 0.5rem;
+  }
+
+
+  /* contact section */
+  .contact-section{
+    grid-template-columns: 1fr;
+  }
+
+  .left-contact-section{
+    padding-left: 2rem;
+  }
+
+  .address-section div{
+    gap: 1rem;
+  }
+
+  .contactus-section h5{
+    width: 300px;
+  }
+
+  input, textarea{
+    width: 100%;
+  }
+
+  .address-section{
+    width: 100%;
+  }
+
+  .form-section{
+    margin: 0 auto;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+
+  .header{
+    padding: 8px 20px;
+  }
+  nav ul{
+    display: none;
+  }
+
+  .reservation-section div{
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .reservation-section div p {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.reservation-section div button {
+  margin-right: 0;
+  width: 35%;
+  margin-top: 1rem;
+}
+
+.flex-menu-container {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 4rem;
+  padding: 1rem;
+}
+
+.contact-section {
+  grid-template-columns: 1fr;
+}
+
+input, textarea{
+  width: 500px;
+}
+
+.left-contact-section{
+  padding-left: 5rem;
+}
+
+.left-contact-section p:nth-of-type(1) {
+  margin-bottom: 2rem;
+  width: 80%;
+}
+
+
+/* hamburger menu*/
+  .burger::before,
+  .burger::after,
+  .burger input {
+
+    display: block;
+    content: "";
+    width: 60px;
+    height: 8px;
+    background-color: #fff;
+    transform-origin: left center;
+    transition: all 0.25s ease-in-out;
+  }
+
+  /* rotate to 45 deg when the input inside the burger has a checkbox which is checked */
+
+  .burger:has(input:checked)::before {
+    rotate: 45deg;
+    width: 50px;
+  }
+
+  .burger:has(input:checked)::after {
+    rotate: -45deg;
+    width: 50px;
+  }
+
+
+  .burger:has(input:checked) + nav ul{
+    display: block;
+    position: absolute;
+    top: 3.6rem;
+    background-color: rgb(255,165,128);
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .burger:has(input:checked) + nav ul li{
+    margin-bottom: 1rem;
+  }
+
+  .burger input:checked {
+    width: 0;
+    opacity: 0;
+  }
+
+  .burger input {
+    appearance: none;
+    appearance: none;
+    padding: 0;
+    margin: 0 0 0;
+  }
+
+  .burger{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 10px;
+  }
+
+  .flex-menu-container{
+    gap: 2rem;
+  }
+
+}
+
+
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+  .header{
+    padding: 8px 30px;
+  }
+
+  .reservation-section div p {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .reservation-section div button {
+  margin-right: 0;
+  width: 30%;
+  }
+
+  .flex-menu-container {
+  padding: 0 20px;
+  }
+
+  .contact-section {
+  grid-template-columns: 1fr;
+  }
+
+  input, textarea{
+    width: 600px;
+  }
+
+  .left-contact-section{
+    padding-left: 5rem;
+  }
+
+  .chef-choice{
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1850px){
+  .contact-section{
+    padding: 4rem;
+  }
+
+  input, textarea{
+    width: 450px;
+  }
+
+  .left-contact-section p:nth-of-type(1){
+    margin-bottom: 2rem;
+    width: 70%;
+  }
+
+  .reservation-section div{
+    padding: 3rem;
+  }
+
+  .reservation-section div p {
+    margin-left: 0;
+    
+  }
+
+  .reservation-section div button {
+    margin-right: 0;
+    width: 20%;
+  }
+
+  .flex-menu-container{
+    padding: 0 3rem;
+  }
+
+
+}
+
+
+
+  
