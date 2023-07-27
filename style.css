@@ -340,7 +340,7 @@ body{
     color: white;
     border: 1px solid grey;
     margin-bottom: 1rem;
-    width: 600px;
+    width: 100%;
     padding: 1rem;
   }
 
@@ -349,9 +349,9 @@ body{
     opacity: 1;
   }
 
-  .form-section{
-    width: auto;
-  }
+  .form-section {
+    width: 100%;
+}
 
   .form-section button{
     background: transparent;
@@ -679,17 +679,14 @@ footer p{
     width: 300px;
   }
 
-  input, textarea{
-    width: 100%;
-  }
-
   .address-section{
     width: 100%;
   }
 
-  .form-section{
-    margin: 0 auto;
-  }
+  .form-section {
+    width: 100%;
+    padding: 0 1rem;
+}
 
   footer{
     flex-direction: column;
@@ -717,39 +714,39 @@ footer p{
     text-align: center;
 }
 
-.reservation-section div button {
+  .reservation-section div button {
   margin-right: 0;
   width: 35%;
   margin-top: 1rem;
-}
+  }
 
-.flex-menu-container {
+  .flex-menu-container {
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
   gap: 4rem;
   padding: 1rem;
-}
+  }
 
-.contact-section {
+  .contact-section {
   grid-template-columns: 1fr;
-}
+  }
 
-input, textarea{
-  width: 500px;
-}
+  input, textarea{
+  width: 100%;
+  }
 
-.left-contact-section{
+  .left-contact-section{
   padding-left: 5rem;
-}
+  }
 
-.left-contact-section p:nth-of-type(1) {
+  .left-contact-section p:nth-of-type(1) {
   margin-bottom: 2rem;
   width: 80%;
-}
+  }
 
 
-/* hamburger menu*/
+  /* hamburger menu*/
   .burger::before,
   .burger::after,
   .burger input {
@@ -843,7 +840,7 @@ input, textarea{
   }
 
   input, textarea{
-    width: 600px;
+    width: 100%;
   }
 
   .left-contact-section{
@@ -855,13 +852,13 @@ input, textarea{
   }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1850px){
+@media screen and (min-width: 993px) and (max-width: 2050px){
   .contact-section{
     padding: 4rem;
   }
 
   input, textarea{
-    width: 450px;
+    width: 100%;
   }
 
   .left-contact-section p:nth-of-type(1){
